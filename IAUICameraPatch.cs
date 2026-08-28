@@ -17,8 +17,6 @@ internal static class IUPatches
 {
   private static readonly string[] _targetFunctions = ["OnDrop", "OnClick",]; // "OnPress", "OnClick"
 
-  // as pressing the recipe button in order to force it
-
   [HarmonyPatch(typeof(UICamera), nameof(UICamera.Notify))]
   internal static class UICameraNotifyPatch
   {
