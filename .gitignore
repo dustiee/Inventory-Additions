@@ -1,0 +1,6 @@
+bin/
+obj/
+lib/*.dll
+Release*.zip
+# "build" is for releases, build* I use for others
+build*
