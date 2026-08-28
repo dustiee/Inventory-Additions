@@ -185,9 +185,9 @@ internal static class PaintDistributor
 
     // NOTE:
     // Tracked slots and their items shouldn't change and we've
-    // already validated them, if this assumption ever turns out to be false for
-    // some reason add some checks here (Likely to happen if we try to make this work
-    // with tools, AHEM torches losing durability on their own)
+    // already validated them
+    // There might be a particular edge case with torches here losing durability while in the inventory screen but 
+    // it's probably okay for now
     int trackedItemExactCount = 0;
     foreach (UIItemSlot slot in slots)
     {
@@ -217,7 +217,7 @@ internal static class PaintDistributor
 
     // HACK:
     // I'm doing this so the user always has at least 1 item "in-hand", so it doesn't
-    // cause dragging to end pre-maturely
+    // prevent slot selection
     // Another reason why we want this is because it prevents a duplication bug,
     // and this is the best way I found of fixing it.
     // If you have a better way of doing this, do improve it!
