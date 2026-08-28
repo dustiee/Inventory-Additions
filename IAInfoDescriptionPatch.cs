@@ -25,7 +25,7 @@ public static class RecipeDescriptionPatch
 
     description =
 $"""
-Drag an item here to view it's description.
+Drag an item here to view its description.
 
 {Purple("Item Controls:")}
   {Green("LEFT CLICK")} {Blue("HOLD")} -> Pick up one item.
