@@ -10,6 +10,8 @@ A BepInEx plugin for Block Story that adds the following changes:
 0. Displays initials of a mob's name that an Antique Spawner produces 
 0. Scales down the labels that display the item counts of items, such that they don't overlap
 0. Provides a sort button for chests and the player's inventory. Items are sorted by category.
+0. Provides a quick-stack button to chests, which automatically stacks an item from your inventory into the chest, if the 
+   chest has a slot containing that item.
 
 For documentation and controls, press the "(i)" button in the inventory screen.
 
