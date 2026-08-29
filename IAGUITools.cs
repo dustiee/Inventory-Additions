@@ -67,17 +67,16 @@ internal static class SorterTools
       if (labelTransform == null)
         return;
 
-      // the magic numbers in both vectors below centers the text in the button and stops it from exceeding its bounds
-      // assuming the text is "Sort"
-      // Might look weird if you try to use other text.There is probably a better wa y of doing this
-      labelTransform.localPosition = new Vector3(24f, 0f, labelTransform.localPosition.z);
+      labelTransform.localPosition = new Vector3(0f, 0f, labelTransform.localPosition.z);
 
       UILabel label = labelTransform.GetComponent<UILabel>();
 
       if (label != null)
       {
         label.text = labelText;
-        label.transform.localScale = new Vector3(20f, 20f, 1);
+        label.pivot = UIWidget.Pivot.Center;
+        label.transform.localScale = new Vector3(20f, 20f, 1f);
+        label.transform.localPosition = new Vector3(0f, 0f, 0f);
       }
     });
 
