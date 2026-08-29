@@ -10,7 +10,7 @@ using static InventoryAdditions.InventoryTools;
 namespace InventoryAdditions;
 
 
-[BepInPlugin("dev.dustie.inventoryadditions", "Inventory Additions", "1.0.0")]
+[BepInPlugin("dev.dustie.inventoryadditions", "Inventory Additions", "1.1.0")]
 public class InventoryAdditions : BaseUnityPlugin
 {
 
