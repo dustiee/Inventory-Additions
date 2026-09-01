@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+
+using static InventoryAdditions.InvGameItemChanges.InvGameItemExtensions;
 using static InventoryAdditions.InventoryTools;
 using static InventoryAdditions.LogTools;
 
@@ -251,7 +253,7 @@ internal static class SorterTools
         continue;
       }
 
-      string key = item.baseItemID + "|" + item.data + "|" + item.paintData;
+      string key = item.ToSimpleKey();
 
       if (merged.TryGetValue(key, out InvGameItem existing))
       {

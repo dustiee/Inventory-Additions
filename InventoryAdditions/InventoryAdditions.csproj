@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <!-- BepInEx template content -->
 
   <PropertyGroup>
@@ -31,7 +30,6 @@
   <!-- End BepInEx -->
 
   <!-- Plugin specific content -->
-
 
   <PropertyGroup>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>

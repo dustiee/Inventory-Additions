@@ -1,6 +1,11 @@
-bin/
-obj/
-lib/*.dll
+
+/InventoryAdditions/lib/*.dll
+/InventoryAdditions/obj/
+/InventoryAdditions/bin/
+
+/InventoryAdditions.Tests/obj/ 
+/InventoryAdditions.Tests/bin/
+
 Release*.zip
 # "build" is for releases, build* I use for others
 build*

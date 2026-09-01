@@ -5,7 +5,7 @@ name="InventoryAdditions"
 
 if dotnet build -c Release; then
 	rm Release*.zip
-	zip -j Release${version}.zip ./bin/Release/${name}.dll
+	zip -j Release${version}.zip ./InventoryAdditions/bin//Release/${name}.dll
 
 	echo "OK"
 else

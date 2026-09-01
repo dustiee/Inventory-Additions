@@ -40,7 +40,8 @@ Download the latest release and move ```InventoryAdditions.dll``` into ```/path/
 
 ## Building prerequisites
 
-You'll need the game's assemblies, so you'll need to paste Assembly-CSharp.dll from the game's ```Managed``` folder into ./lib 
+You'll need the game's assemblies, so you'll need to paste Assembly-CSharp.dll from the game's ```Managed``` folder into 
+```./InventoryAdditions/lib/```
 
 ## Disclaimer
 

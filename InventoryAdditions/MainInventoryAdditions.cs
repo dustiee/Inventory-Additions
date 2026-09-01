@@ -14,9 +14,6 @@ namespace InventoryAdditions;
 public class InventoryAdditions : BaseUnityPlugin
 {
 
-  internal static ManualLogSource? Log;
-
-
   private static ConfigEntry<bool>? _configMuteVerbose;
   private const bool _muteVerboseDefault = true;
 
@@ -44,7 +41,9 @@ public class InventoryAdditions : BaseUnityPlugin
 
   private void Awake()
   {
-    Log = Logger;
+
+    LogTools.Logger = new BepInExLogger(Logger);
+    LogTools.VerboseLogging = Verbose;
 
     Harmony harmony = new Harmony("dev.dustie.inventoryadditions");
     harmony.PatchAll();
